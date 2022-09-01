@@ -6,8 +6,13 @@ void printDateInfo(int month, int year);
 int main() {
     int month ;
     int year ;
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~\n");
     printf("Type a month then a year\n");
-    scanf("%d %d", &month, &year);
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~\n");
+    printf("Month: ");
+    scanf("%d", &month);
+    printf("Year: ");
+    scanf("%d",&year);
     
     printDateInfo(month, year);
     

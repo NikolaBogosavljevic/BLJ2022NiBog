@@ -28,9 +28,9 @@ int isLeapYear(int year){
 int daysInMonth(int days, int year){
     if(days == 1){
         return 31;
-    }else if (days ==2 && isLeapYear(1)){
+    }else if (days ==2 && isLeapYear(year) == 1){
    return 29; 
-    }else if (days ==2 && isLeapYear(0)){
+    }else if (days ==2 && isLeapYear(year) == 0){
         return 28;
     }else if (days == 3){
         return 31;

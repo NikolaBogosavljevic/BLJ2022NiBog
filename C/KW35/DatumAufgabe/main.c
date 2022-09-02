@@ -23,8 +23,7 @@ int isLeapYear(int year){
         return 1;
     }else if (year % 100 == 0){
         return 0;
-    }
-    else if (year % 4 == 0){
+    }else if (year % 4 == 0){
         return 1;
     }else{
         return 0;
@@ -33,9 +32,9 @@ int isLeapYear(int year){
 int daysInMonth(int days, int year){
     if(days == 1){
         return 31;
-    }else if (days ==2 && isLeapYear(year) == 1){
+    }else if (days == 2 && isLeapYear(year) == 1){
    return 29; 
-    }else if (days ==2 && isLeapYear(year) == 0){
+    }else if (days == 2 && isLeapYear(year) == 0){
         return 28;
     }else if (days == 3){
         return 31;

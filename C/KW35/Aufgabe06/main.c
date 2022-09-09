@@ -6,7 +6,9 @@ int main(int argc, char** argv) {
     printf("Type in whatever word you want:\n");
     scanf("%s", &word);
     
-    for(int a = 0)
+    for(int a = 50; a >= 0; a--){
+        printf("%c\n", word[a]);
+    }
     
     return (EXIT_SUCCESS);
 }

@@ -15,7 +15,7 @@ header a{
   
 }
 header .logo a{
-    background-image: url("bogblog-logo.png");
+    background-image: url("images/bogblog-logo.png");
     background-size: 300px;
     background-repeat: no-repeat;
     display: inline-block;
@@ -51,4 +51,11 @@ body{
 .bog{
     position: relative;
     right: 70px;
+}
+img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+p{
+    font-weight: bold;
 }

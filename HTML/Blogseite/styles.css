@@ -1,0 +1,54 @@
+header{
+    padding: 20px;
+    height: 150px;
+    background: black;
+    
+    background-size: 100%;
+    text-align: center;
+  
+}
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+  
+}
+header .logo a{
+    background-image: url("bogblog-logo.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 330px;
+    position: relative;
+    color: black;
+    top: -75px;
+    width: 300px;
+    
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+li{
+    display: inline;
+    margin-right: 35px;
+    
+    border-radius: 4px;
+}
+a:hover{
+    text-decoration: underline;
+    color: grey;
+}
+body{
+    background-color: grey;
+    text-align: center;
+}
+.col-md-3{
+    margin-right: 90px;
+}
+.bog{
+    position: relative;
+    right: 70px;
+}

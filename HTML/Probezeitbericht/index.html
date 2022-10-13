@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Probezitbericht</title>
+        <style>
+            a:link, a:visited{
+                text-decoration: none;
+                size: 50 px;
+                color:  pink;
+                background-color: green;
+                text-align: right;
+                display: block;
+                width: 600px;
+                border: 3px solid aqua;
+            }
+            a:hover{
+                color: aquamarine;
+                background: yellow;
+                border: 8px solid greenyellow;
+            }
+            a:active{
+                opacity: .3;
+                background: blue;
+                color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h2>Probezeitbericht</h2>
+        <label for="Lernende">Lernende/r:</label>
+        <input type="text" id = "Lernende" name = "Lernende"><br>
+        <label for="Lehrberuf">Lehrberuf</label>
+        <select name="Lehrberuf" id="Lehrberuf">
+            <option value="ApplikationsentwicklerIn">ApplikationsentwicklerIn</option>
+            <option value="PlattformentwicklerIn">PlattformentwicklerIn</option>
+            <option value="MediamatikerIn">MediamatikerIn</option>
+            <option value="Kaufmann/Kauffrau">Kaufmann/Kauffrau</option>
+        </select>
+        <fieldset>
+        <legend>Berufsmaturität</legend>
+        <input type="radio" id="mit BMS" name="Berufsmaturität" value="mit BMS">
+        <label for="mit BMS">mit BMS</label>
+        <input type="radio" id="ohne BMS" name="Berufsmaturität" value="ohne BMS">
+        <label for="ohne BMS">ohne BMS</label>
+        </fieldset>
+        <label for="Lehrbeginn">Lehrbeginn:</label>
+        <input type="date"><br>
+        <label for="BerufsbildnerIn">BerufsbildnerIn:</label>
+        <input type="text">
+        <h2>Gesamteindruck</h2><br>
+        <textarea rows="5" cols="30"></textarea>
+        <h2>Beurteilung</h2><br>
+        <hr>
+        <label for="Fachkompetenz"><font size ="4">Fachkompetenz</font></label> 
+        <div>Fertigkeiten, Kenntnisse, Quantität, Qualität etc.</div>
+        <input type="checkbox" id="sehr gut" name="sehr gut" value="sehr gut">
+        <label for="sehr gut">sehr gut</label><br>
+        <input type="checkbox" id="gut" name="gut" value="gut">
+        <label for="gut">gut</label><br>
+        <input type="checkbox" id="genügend" name="genügend" value="genügend">
+        <label for="genügend">genügend</label><br>
+        <input type="checkbox" id="ungenügend" name="ungenügend" value="ungenügend">
+        <label for="ungenügend">ungenügend</label><br>
+        <hr>
+        <label for="Methodenkompetenz"><font size ="4">Methodenkompetenz</font></label> 
+        <div>Lernfähigkeit, Arbeitsmethodik, Arbeitssicherheit, Kreativität etc.</div>
+        <input type="checkbox" id="sehr gut" name="sehr gut" value="sehr gut">
+        <label for="sehr gut">sehr gut</label><br>
+        <input type="checkbox" id="gut" name="gut" value="gut">
+        <label for="gut">gut</label><br>
+        <input type="checkbox" id="genügend" name="genügend" value="genügend">
+        <label for="genügend">genügend</label><br>
+        <input type="checkbox" id="ungenügend" name="ungenügend" value="ungenügend">
+        <label for="ungenügend">ungenügend</label><br>
+        <hr>
+        <label for="Sozialkompetenz"><font size ="4">Sozialkompetenz</font></label> 
+        <div>Teamfähigkeit, Firmenbezug, umweltgerechtes Verhalten etc.</div>
+        <input type="checkbox" id="sehr gut" name="sehr gut" value="sehr gut">
+        <label for="sehr gut">sehr gut</label><br>
+        <input type="checkbox" id="gut" name="gut" value="gut">
+        <label for="gut">gut</label><br>
+        <input type="checkbox" id="genügend" name="genügend" value="genügend">
+        <label for="genügend">genügend</label><br>
+        <input type="checkbox" id="ungenügend" name="ungenügend" value="ungenügend">
+        <label for="ungenügend">ungenügend</label><br>
+        <hr>
+        <label for="Selbstkompetenz"><font size ="4">Selbstkompetenz</font></label> 
+        <div>Selbstständigkeit, Leistungsbereitschaft, Flexibilität etc.</div>
+        <input type="checkbox" id="sehr gut" name="sehr gut" value="sehr gut">
+        <label for="sehr gut">sehr gut</label><br>
+        <input type="checkbox" id="gut" name="gut" value="gut">
+        <label for="gut">gut</label><br>
+        <input type="checkbox" id="genügend" name="genügend" value="genügend">
+        <label for="genügend">genügend</label><br>
+        <input type="checkbox" id="ungenügend" name="ungenügend" value="ungenügend">
+        <label for="ungenügend">ungenügend</label><br>
+        <hr>
+        <h2>Fazit</h2><br>
+        <label for="Probezeit">Probezeit</label>
+        <select name="Probezeit" id="Probezeit">
+            <option value="bestanden">bestanden</option>
+            <option value="verlängert">verlängert</option>
+            <option value="nicht bestanden">nicht bestanden</option>
+        </select>
+        <h2>Bemerkungen</h2>
+        <textarea rows="5" cols="30"></textarea><br>
+        <button>Speichern</button><br>
+        <h1><a href="arbeitsjournal.html" target="_blank">Arbeitsjournal</a></h1>
+    </body>
+</html>

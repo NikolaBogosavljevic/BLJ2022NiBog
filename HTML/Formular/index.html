@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <title>Formular</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        body{
+          
+            margin-top: 100px;
+        }
+        #dog{
+            width: 400px;
+        }
+        .container{
+            padding-left: 350px;
+        }
+        #plz{
+            width: 100px;
+        }
+        #ort{
+            width: 240px;
+        }
+        #land{
+            width: 402px;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <div class="container">
+        <div class="row">
+            <p><div class="col-lg-12">Anrede:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="Anrede"> <label for="Herr">Herr&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="radio" name="Anrede"> <label for="Frau">Frau</label></div>
+            <p><div class="col-lg-12">Vorname:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="dog" placeholder="Bog" autofocus> </div>
+            <p><div class="col-lg-12">Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="dog" placeholder="Franek"> </div>
+            <p><div class="col-lg-12">Datum: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date" id="dog"> </div>
+            <p><div class="col-lg-12">Strasse:&ensp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="dog" placeholder="Bahnhofstrasse 23"></div>
+            <p><div class="col-lg-12">PLZ:&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="plz" placeholder="8864">&nbsp;&nbsp;Ort:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="ort" placeholder="Reichenburg"></div>
+            <p><div class="col-lg-12">Land:&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="Land" id="land">
+                <option value="Wähl bro">Wähl bro</option>
+                <option value="Schweiz">Schweiz</option>
+                <option value="Reichenburg">Reichenburg</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Seychelles">Seychelles</option>
+                <option value="Skyrim">Skyrim</option>
+            </select></div>
+        </div>
+    </div>
+</body> 

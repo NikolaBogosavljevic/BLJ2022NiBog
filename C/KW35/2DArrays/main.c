@@ -14,6 +14,7 @@ int main(int argc, char** argv) {
         printf("What do you want to do?\n");
         printf("New Number: 1              See current numbers: 2              Delete a number: 3              Exit: 4\n");
         scanf("%d", &choice);
+        fflush(stdin);
 
         if (choice == 1) {
 

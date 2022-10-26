@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include<time.h>
 #define SIZE 5
 
 int randInRange(int min, int max) {
@@ -39,7 +40,8 @@ int main(int argc, char** argv) {
 
         printf("Input:");
         scanf("%d%d", &x, &y);
-
+        fflush(stdin);
+                
         if (field[y][x] != '#') {
             field[y][x] = '#';
         } else {

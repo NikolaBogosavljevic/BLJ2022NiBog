@@ -1,3 +1,3 @@
-build/Debug/MinGW-Windows/main.o: main.c functionsLink.h
+build/Debug/MinGW-Windows/main.o: main.c functions.h
 
-functionsLink.h:
+functions.h:

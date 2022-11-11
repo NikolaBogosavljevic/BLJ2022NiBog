@@ -21,7 +21,7 @@ public class Starter {
             person.setFavoriteColor(favoritecolor);
 
             System.out.println("\nWhat do you want to do?");
-            System.out.println("1: View current information\t\t2: Change Information");
+            System.out.println("1: View current information\t\t2: Change Information\t\t3: Quit");
 
             String choice = sc.nextLine();
 
@@ -57,6 +57,8 @@ public class Starter {
                     System.out.print("Bestfriend: ");
                     bestfriend = sc.nextLine();
                 }
+            }else if(choice.equals("3")){
+                break;
             }
         }
     }

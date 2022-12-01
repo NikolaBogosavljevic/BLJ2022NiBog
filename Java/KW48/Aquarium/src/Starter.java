@@ -18,12 +18,13 @@ public class Starter {
                 "                |__/          ");
 
 
-
         Aquarium aquarium = new Aquarium();
 
         while (true) {
+
             System.out.println("\n\n1: View aquarium   2: Add fish   3: Kill fish   4: Move fish   5: exit");
             int choice = scan.nextInt();
+
 
             if (choice == 1) {
                 aquarium.printAquarium();
@@ -33,18 +34,29 @@ public class Starter {
                 System.out.print("Y: ");
                 int positionY = scan.nextInt();
                 System.out.print("Name: ");
-                String name = scan.nextLine();
                 scan.nextLine();
-                aquarium.addFish(name, positionX, positionY);
+                String name = scan.nextLine();
 
+                aquarium.addFish(name, positionX, positionY);
+                aquarium.printAquarium();
             } else if (choice == 3) {
                 System.out.print("X: ");
                 int deleteX = scan.nextInt();
                 System.out.print("Y: ");
                 int deleteY = scan.nextInt();
                 aquarium.deleteFish(deleteX, deleteY);
+                aquarium.printAquarium();
             } else if (choice == 4) {
-
+                System.out.println("Which fish?");
+                System.out.print("X: ");
+                int moveChoiceX = scan.nextInt();
+                System.out.print("Y: ");
+                int moveChoiceY = scan.nextInt();
+                System.out.println("In what Direction do you want to move it?   (up, down, left, right");
+                scan.nextLine();
+                String direct = scan.nextLine();
+                aquarium.moveFish(direct, moveChoiceX, moveChoiceY);
+                aquarium.printAquarium();
             } else if (choice == 5) {
                 break;
             }

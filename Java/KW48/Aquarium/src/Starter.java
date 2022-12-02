@@ -19,15 +19,16 @@ public class Starter {
 
 
         Aquarium aquarium = new Aquarium();
-
+        System.out.println("\n\n1: View aquarium   2: Add fish   3: Kill fish   4: Move fish          5: exit");
         while (true) {
 
-            System.out.println("\n\n1: View aquarium   2: Add fish   3: Kill fish   4: Move fish   5: exit");
+
             int choice = scan.nextInt();
 
 
             if (choice == 1) {
                 aquarium.printAquarium();
+                System.out.println("\n\n1: View aquarium   2: Add fish   3: Kill fish   4: Move fish          5: exit");
             } else if (choice == 2) {
                 System.out.print("X: ");
                 int positionX = scan.nextInt();
@@ -36,7 +37,6 @@ public class Starter {
                 System.out.print("Name: ");
                 scan.nextLine();
                 String name = scan.nextLine();
-
                 aquarium.addFish(name, positionX, positionY);
                 aquarium.printAquarium();
             } else if (choice == 3) {
@@ -52,11 +52,10 @@ public class Starter {
                 int moveChoiceX = scan.nextInt();
                 System.out.print("Y: ");
                 int moveChoiceY = scan.nextInt();
-                System.out.println("In what Direction do you want to move it?   (up, down, left, right");
+                System.out.println("In what Direction do you want to move it?   (up, down, left, right)");
                 scan.nextLine();
                 String direct = scan.nextLine();
                 aquarium.moveFish(direct, moveChoiceX, moveChoiceY);
-                aquarium.printAquarium();
             } else if (choice == 5) {
                 break;
             }

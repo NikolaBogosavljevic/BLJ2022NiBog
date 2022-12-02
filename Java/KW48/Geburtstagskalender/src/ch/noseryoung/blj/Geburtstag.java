@@ -1,13 +1,16 @@
+package ch.noseryoung.blj;
+
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 public class Geburtstag {
     public static void main(String[] args) {
         Person[] persArr = new Person[40];
+        Person person = new Person();
         LocalDate date = LocalDate.now();
         initPersonArray(persArr);
-        System.out.println("2022 haben Geburtstag im");
+        System.out.println(date.getYear() + " haben ch.noseryoung.blj.Geburtstag im");
 
+        person.printBirthdays(persArr);
 
     }
 
@@ -20,7 +23,6 @@ public class Geburtstag {
         persArr[i++] = new Person(2006, 5, 21, "Luis");
         persArr[i++] = new Person(2001, 12, 19, "Sairam");
         persArr[i++] = new Person(2002, 11, 13, "Tsering Lhamo");
-        persArr[i++] = new Person(2004, 9, 27, "Nikola");
         persArr[i++] = new Person(2007, 1, 18, "Noah");
         persArr[i++] = new Person(2007, 1, 25, "Aurora");
         persArr[i++] = new Person(1999, 12, 12, "Jasmin");
@@ -51,10 +53,12 @@ public class Geburtstag {
         persArr[i++] = new Person(2006, 3, 7, "Timothy");
         persArr[i++] = new Person(2006, 4, 7, "Jamie");
         persArr[i++] = new Person(2006, 3, 18, "Jasmin");
-        persArr[i++] = new Person(2022, 4, 25, "Sharujah");
-        persArr[i++] = new Person(2005, 3, 4, "Darko");
+        persArr[i++] = new Person(2002, 4, 25, "Sharujah");
         persArr[i++] = new Person(2006, 4, 7, "Dina");
+        persArr[i++] = new Person(2005, 3, 4, "Darko");
+        persArr[i] = new Person(2004, 9, 27, "Nikola");
 
 
     }
+
 }

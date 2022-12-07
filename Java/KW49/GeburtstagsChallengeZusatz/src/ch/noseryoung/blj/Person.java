@@ -2,6 +2,7 @@ package ch.noseryoung.blj;
 
 import java.text.DecimalFormat;
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class Person {
     private int year;
@@ -21,22 +22,22 @@ public class Person {
         this.name = name;
     }
 
-    public void bubbleSortDay(Person[] persArr) {
-        int n = persArr.length;
+    public void bubbleSortDay(ArrayList<Person> persArr) {
+        int n = persArr.size();
 
         for (int i = 1; i < n; i++) {
             for (int j = 1; j < (n - 1); j++) {
-                if (persArr[j - 1].getDay() > persArr[j].getDay()) {
-                    Person temp = persArr[j - 1];
-                    persArr[j - 1] = persArr[j];
-                    persArr[j] = temp;
+                if (persArr.get(j - 1).getDay() > persArr.get(j).getDay()) {
+                    Person temp = persArr.get(j - 1);
+                    persArr.set(j - 1, persArr.get(j));
+                    persArr.set(j, temp);
                 }
             }
         }
     }
 
 
-    public void printBirthdays(Person[] persArr) {
+    public void printBirthdays(ArrayList<Person> persArr) {
         String[] month = {"Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"};
         LocalDate date = LocalDate.now();
         for (int j = 0; j < month.length; j++) {
@@ -45,7 +46,7 @@ public class Person {
             for (Person person : persArr) {
                 if (person.getMonth() == (j + 1)) {
                     int age = date.getYear() - person.getYear();
-                    System.out.println("\t" + person.getDay() + ". " + person.getName() + " (" + age + ")");
+                    System.out.println(String.format("%5s", formatter.format(person.getDay()))  + ". " + person.getName() + " (" + age + ")");
                 }
             }
             bubbleSortDay(persArr);

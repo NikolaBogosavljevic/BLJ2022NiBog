@@ -1,0 +1,34 @@
+header{
+    padding: 20px;
+    height: 150px;
+    background: rgb(80, 64, 41); 
+}
+header .title{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(46, 36, 13);
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+li{
+    display: inline;
+    margin-right: 35px;
+    
+    border-radius: 4px;
+}
+
+body{
+    background-color: rgb(170, 153, 118);
+    text-align: center;
+}
+div{
+    text-align: center;
+}
+img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}

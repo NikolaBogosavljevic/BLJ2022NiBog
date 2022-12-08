@@ -24,8 +24,10 @@ body{
     background-color: rgb(170, 153, 118);
     text-align: center;
 }
-div{
-    text-align: center;
+footer{
+    padding-left:10px;
+    text-align: left;
+    background: rgb(80, 64, 41);
 }
 img{
     height: 300px;

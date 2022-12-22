@@ -6,8 +6,8 @@
  */
 public class Starter {
   public static void main(String[] args) {
-    Simulation sim = new Simulation(250, true, Preset.GLIDERS_20X20);
-    SimulationPanel simPanel = new SimulationPanel(sim, 40, 0.9);
+    Simulation sim = new Simulation(453, true, Preset.Penta);
+    SimulationPanel simPanel = new SimulationPanel(sim, 40, .6);
     simPanel.getSimulation().start();
   }
 }

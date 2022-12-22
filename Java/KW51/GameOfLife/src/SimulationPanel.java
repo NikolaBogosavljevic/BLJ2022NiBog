@@ -51,7 +51,7 @@ public class SimulationPanel extends JPanel implements PropertyChangeListener {
 
     simulationImage = new BufferedImage(width * scale, height * scale, BufferedImage.TYPE_INT_ARGB);
     mainFrame = new JFrame();
-    mainFrame.setTitle("Conway's Game of Life");
+    mainFrame.setTitle("Im Da BIGGEST Bird");
     mainFrame.setResizable(false);
     mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -101,9 +101,9 @@ public class SimulationPanel extends JPanel implements PropertyChangeListener {
         int scaledY = y * scale + scale / 2;
 
         if (newField[x][y] == 1) {
-          g2d.setColor(Color.magenta);
+          g2d.setColor(Color.green);
         } else {
-          g2d.setColor(Color.LIGHT_GRAY);
+          g2d.setColor(Color.red);
         }
         g2d.drawLine(scaledY, scaledX, scaledY, scaledX);
       }

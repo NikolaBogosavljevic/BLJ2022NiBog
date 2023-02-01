@@ -1,0 +1,6 @@
+27.01.2023    14:21     script.txt
+-----------------------------------
+Number of unique words:	      2148
+Total number of words:	      9217
+Most common word:	          you
+-----------------------------------

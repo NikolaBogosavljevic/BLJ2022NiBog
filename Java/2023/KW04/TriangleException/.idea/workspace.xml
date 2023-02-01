@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12a923b5-4b64-44b7-84fc-62fd1a365324" name="Changes" comment="Started Exceptions">
-      <change beforePath="$PROJECT_DIR$/../../../KW49/JavaAufgabe19/out/production/JavaAufgabe19/main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../KW49/JavaAufgabe19/src/main.java" beforeDir="false" />
-    </list>
+    <list default="true" id="12a923b5-4b64-44b7-84fc-62fd1a365324" name="Changes" comment="Started Exceptions" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +32,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/BLJ2022NiBog/Java/2023/KW04/TriangleException",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"

@@ -1,0 +1,11 @@
+ country_id | country_abbr |    country_name
+------------+--------------+---------------------
+       1201 | ALB          | Albania
+       1202 | AUT          | Austria
+       1203 | BEL          | Belgium
+       1204 | CRO          | Croatia
+       1205 | CZE          | Czech Republic
+       1206 | ENG          | England
+       1207 | FRA          | France
+       1208 | GER          | Germany
+       1209 | HUN          | Hungary

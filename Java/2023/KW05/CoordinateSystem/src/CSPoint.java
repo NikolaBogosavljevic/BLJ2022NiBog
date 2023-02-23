@@ -8,7 +8,7 @@ public class CSPoint extends Point implements Shape {
 
     public CSPoint(int x, int y) {
         super(x, y);
-
+        setPointId(count++);
     }
 
     @Override

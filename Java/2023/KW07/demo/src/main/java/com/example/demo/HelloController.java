@@ -54,7 +54,7 @@ public class HelloController {
     }
 
     @FXML
-    protected void onDeleteButtonClick() {
+    protected void onDeleteButtonClick(){
         mgr.getPeople().remove(mgr.getIndex());
         mgr.setIndex(mgr.getIndex() - 1);
         firstNameField.setText("");
@@ -80,11 +80,10 @@ public class HelloController {
         }
         showInfo();
     }
-
     @FXML
     protected void onNextButtonClick() {
 
-        if (mgr.getIndex() != mgr.getPeople().size() - 1) {
+        if (mgr.getIndex() != mgr.getPeople().size()-1){
             mgr.setIndex(mgr.getIndex() + 1);
         }
         showInfo();

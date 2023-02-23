@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="427.0" prefWidth="548.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="com.example.morsecodetranslator.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Pane prefHeight="388.0" prefWidth="508.0">
+         <children>
+            <Button fx:id="translateButton" layoutX="227.0" layoutY="186.0" mnemonicParsing="false" text="Button" />
+            <TextField fx:id="userInput" layoutX="52.0" layoutY="38.0" onKeyTyped="#onTranslate" prefHeight="127.0" prefWidth="405.0" />
+            <TextField fx:id="translation" layoutX="52.0" layoutY="234.0" prefHeight="127.0" prefWidth="405.0" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

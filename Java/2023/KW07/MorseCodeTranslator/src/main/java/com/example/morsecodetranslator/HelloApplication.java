@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.morsecodetranslator;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -12,7 +12,7 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 550, 420);
-        stage.setTitle("Personen Manager");
+        stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
     }

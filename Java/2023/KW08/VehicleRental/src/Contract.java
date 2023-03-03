@@ -7,29 +7,32 @@ public class Contract {
     private LocalDate startDate;
     private LocalDate endDate;
 
-    public Contract(Person person, Vehicle vehicle, LocalDate startDate, LocalDate endDate, ArrayList<Person> denyList, ArrayList<Contract> contracts){
+    public Contract(Person person, Vehicle vehicle, LocalDate startDate, LocalDate endDate, ArrayList<Person> denyList, ArrayList<Contract> contracts) {
         try {
-            for (Person p : denyList){
-                if (p.equals(person)){
+            for (Person p : denyList) {
+                if (p.equals(person)) {
                     throw new DenyListException();
                 }
             }
             for (Contract c : contracts) {
-                if (startDate.isAfter(c.getStartDate()) && startDate.isBefore(c.getEndDate()) ||
-                        endDate.isAfter(c.getStartDate()) && endDate.isBefore(c.getEndDate())){
-                    throw new LeaseLengthCollisionException();
+                if (vehicle.equals(c.getVehicle())) {
+                    if (startDate.isAfter(c.getStartDate()) && startDate.isBefore(c.getEndDate()) ||
+                            endDate.isAfter(c.getStartDate()) && endDate.isBefore(c.getEndDate())) {
+                        throw new LeaseLengthCollisionException();
+                    }
                 }
             }
-            if (vehicle.getAgeRestriction().isBefore(person.getBirthYear())){
+            if (vehicle.getAgeRestriction().isBefore(person.getBirthYear())) {
                 throw new MinorAgeException();
             }
             this.person = person;
             this.vehicle = vehicle;
             this.startDate = startDate;
-            this.endDate= endDate;
+            this.endDate = endDate;
+            System.out.println("Contract created\n");
 
-        }catch (Exception e){
-            System.out.println("No contract for ya: "+e.getMessage());
+        } catch (ContractException e) {
+            System.out.println("Contract not possible: " + e.getMessage());
         }
     }
 
@@ -39,5 +42,9 @@ public class Contract {
 
     public LocalDate getEndDate() {
         return endDate;
+    }
+
+    public Vehicle getVehicle() {
+        return vehicle;
     }
 }

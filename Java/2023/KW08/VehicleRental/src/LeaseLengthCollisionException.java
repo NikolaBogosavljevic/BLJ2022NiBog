@@ -1,5 +1,5 @@
-public class LeaseLengthCollisionException extends Exception {
+public class LeaseLengthCollisionException extends ContractException {
     public LeaseLengthCollisionException(){
-        super("no can do boss ur colliding with other contractd");
+        super("Collision with other contract");
     }
 }

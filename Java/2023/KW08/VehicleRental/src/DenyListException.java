@@ -1,5 +1,5 @@
-public class DenyListException extends Exception {
+public class DenyListException extends ContractException {
     public DenyListException(){
-        super("Denied ROFL");
+        super("Customer is on denylist");
     }
 }

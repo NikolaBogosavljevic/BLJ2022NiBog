@@ -1,5 +1,5 @@
-public class MinorAgeException extends Exception {
+public class MinorAgeException extends ContractException {
     public MinorAgeException(){
-        super("too young fella");
+        super("Not old enough");
     }
 }

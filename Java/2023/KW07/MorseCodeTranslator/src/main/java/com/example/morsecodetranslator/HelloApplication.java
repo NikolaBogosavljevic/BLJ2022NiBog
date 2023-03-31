@@ -6,15 +6,17 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.time.LocalDate;
+import java.util.stream.Collectors;
 
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 550, 420);
-        stage.setTitle("Hello!");
-        stage.setScene(scene);
-        stage.show();
+        String actual = ALL_CONSOLES.stream().filter(gc -> gc.getInitialRelease().isBefore(LocalDate.of(2004, 9, 27)))
+                .sorted()
+                .map(gc -> "- "+ gc.getName()+" Gen: "+ gc.getGeneration())
+                .collect(Collectors.joining("\n"));
+        System.out.println(actual);
     }
 
     public static void main(String[] args) {

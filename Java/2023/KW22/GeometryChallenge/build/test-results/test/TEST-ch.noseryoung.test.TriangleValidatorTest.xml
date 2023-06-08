@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ch.noseryoung.test.TriangleValidatorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-06-01T06:37:03" hostname="DESKTOP-T22Q940" time="0.024">
+  <properties/>
+  <testcase name="isIsosceles_twoSideSameLength_true()" classname="ch.noseryoung.test.TriangleValidatorTest" time="0.021"/>
+  <testcase name="isScalene_noSideSameLength_true()" classname="ch.noseryoung.test.TriangleValidatorTest" time="0.001"/>
+  <testcase name="isEquilateral_allSideSameLengths_true()" classname="ch.noseryoung.test.TriangleValidatorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

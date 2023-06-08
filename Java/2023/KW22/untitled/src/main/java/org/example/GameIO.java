@@ -1,4 +1,4 @@
-package ch.noseryoung.blj;
+package org.example;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -55,11 +55,11 @@ public class GameIO extends JFrame {
         Timer timer = new Timer();
         timer.schedule(new TimerTask() {
             int secondsPassed = 0;
-            final int totalSeconds = 10;
+            int totalSeconds = 10;
 
             public void run() {
-                secondsPassed++;
-                System.out.println("Seconds passed: " + secondsPassed);
+                totalSeconds--;
+                System.out.println("Seconds passed: " + totalSeconds);
 
                 if (secondsPassed == totalSeconds) {
                     System.out.println("YOU LOSSDSST!!");

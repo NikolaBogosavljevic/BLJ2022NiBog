@@ -1,4 +1,4 @@
-package ch.noseryoung.blj;
+package org.example;
 
 import java.util.ArrayList;
 import java.util.Timer;
@@ -41,7 +41,7 @@ public class Game {
             if (gameField[posY - 1][posX] == 3 || gameField[posY - 1][posX] == 5) {
                 gameField[posY - 2][posX] = 3;
             }
-            if (isGoalCoord()) {
+            if (goalCoords != null && isGoalCoord()) {
                 gameField[posY][posX] = 4;
 
             } else {
@@ -49,10 +49,12 @@ public class Game {
             }
             gameField[posY - 1][posX] = 2;
         }
-        if (isGameDone()) {
+        if (goalCoords != null && isGameDone()) {
             System.exit(0);
         }
-        colorCorrect();
+        if (goalCoords != null) {
+            colorCorrect();
+        }
     }
 
     public void moveDown() {
@@ -61,7 +63,7 @@ public class Game {
             if (gameField[posY + 1][posX] == 3 || gameField[posY + 1][posX] == 5) {
                 gameField[posY + 2][posX] = 3;
             }
-            if (!isGoalCoord()) {
+            if (goalCoords != null && !isGoalCoord()) {
                 gameField[posY][posX] = 0;
 
             } else {
@@ -69,10 +71,12 @@ public class Game {
             }
             gameField[posY + 1][posX] = 2;
         }
-        if (isGameDone()) {
+        if (goalCoords != null && isGameDone()) {
             System.exit(0);
         }
-        colorCorrect();
+        if (goalCoords != null) {
+            colorCorrect();
+        }
     }
 
     public void moveLeft() {
@@ -81,7 +85,7 @@ public class Game {
             if (gameField[posY][posX - 1] == 3 || gameField[posY][posX - 1] == 5) {
                 gameField[posY][posX - 2] = 3;
             }
-            if (!isGoalCoord()) {
+            if (goalCoords != null && !isGoalCoord()) {
                 gameField[posY][posX] = 0;
 
             } else {
@@ -89,10 +93,12 @@ public class Game {
             }
             gameField[posY][posX - 1] = 2;
         }
-        if (isGameDone()){
+        if (goalCoords != null && isGameDone()) {
             System.exit(0);
         }
-        colorCorrect();
+        if (goalCoords != null) {
+            colorCorrect();
+        }
     }
 
     public void moveRight() {
@@ -109,10 +115,12 @@ public class Game {
             }
             gameField[posY][posX + 1] = 2;
         }
-        if (isGameDone()){
+        if (goalCoords != null && isGameDone()) {
             System.exit(0);
         }
-        colorCorrect();
+        if (goalCoords != null) {
+            colorCorrect();
+        }
     }
 
     public void escAction() {
@@ -131,9 +139,11 @@ public class Game {
     }
 
     public boolean isGoalCoord() {
-        for (int[] i : goalCoords) {
-            if (i[0] == posY && i[1] == posX) {
-                return true;
+        if (goalCoords != null) {
+            for (int[] i : goalCoords) {
+                if (i[0] == posY && i[1] == posX) {
+                    return true;
+                }
             }
         }
         return false;
@@ -148,12 +158,28 @@ public class Game {
         return true;
     }
 
-    public void colorCorrect(){
+    public void colorCorrect() {
         for (int[] i : goalCoords) {
             if (gameField[i[0]][i[1]] == 3) {
                 gameField[i[0]][i[1]] = 5;
             }
         }
+    }
+
+    public void setGameField(int[][] gameField) {
+        this.gameField = gameField;
+    }
+
+    public void setGoalCoords(ArrayList<int[]> goalCoords) {
+        this.goalCoords = goalCoords;
+    }
+
+    public void setPosX(int posX) {
+        this.posX = posX;
+    }
+
+    public void setPosY(int posY) {
+        this.posY = posY;
     }
 
     public int[][] getField() {
